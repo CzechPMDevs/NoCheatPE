@@ -10,8 +10,14 @@ class NoCheatPE extends PluginBase{
   
   public $movement_cheats = [];
   
+  /** @var EventListener $eventListener */
+  public $eventListener;
+  
   public function onEnable(){
     self::$instance = $this;
+    
+    $this->getServer()->getPluginManager()->registerEvents($this->eventListener = new EventListener($this), $this);
+    
     PluginBase::onEnable();
   }
   
