@@ -16,7 +16,7 @@ class NoCheatPlayer extends Player{
 				/** @var CheatDetection $cheat */
 				$cheat = new $cheatClass($this);
 				$this->cheats[] = $cheat;
-			}
+			
 		}
 
     
