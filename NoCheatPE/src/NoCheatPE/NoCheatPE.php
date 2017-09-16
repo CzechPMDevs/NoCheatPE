@@ -29,6 +29,10 @@ class NoCheatPE extends PluginBase{
     PluginBase::onEnable();
   }
   
+  public function getCheats(){
+    return $this->cheats;
+  }
+  
   public function registerCheat($class){
      if(is_a($class, CheatDetection::class, true) !== false){
      $this->cheatsCount++;
