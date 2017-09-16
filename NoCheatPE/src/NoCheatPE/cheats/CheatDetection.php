@@ -23,7 +23,7 @@ abstract class CheatDetection{
     return $this->player;
   }
   
-  public function onTick(){ //Will be used in player class tick function
+  public function onTick($currentTick){ //Will be used in player class tick function?
     
   }
   
