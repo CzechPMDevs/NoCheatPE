@@ -10,6 +10,8 @@ class NoCheatPE extends PluginBase{
   /** @var NoCheatPE $instance */
   public static $instance;
   
+  public $num;
+  
   /** @var CheatDetection[] $cheats */
   public $cheats = [];
   
