@@ -1,11 +1,9 @@
 <?php
-
 namespace NoCheatPE\cheats;
-
 use pocketmine\Player;
-
 class NoCheatPlayer extends Player{
-		
+
+  /** @var CheatDetection[] $cheats */ 
   public $cheats = [];
 	
   public function __construct(SourceInterface $interface, $clientID, $ip, $port){
@@ -18,7 +16,6 @@ class NoCheatPlayer extends Player{
 				$this->cheats[] = $cheat;
 			
 		}
-
     
         parent::__construct($interface, $clientID, $ip, $port);
         
