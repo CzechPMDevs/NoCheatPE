@@ -5,9 +5,9 @@ namespace NoCheatPE\cheats;
 use pocketmine\Player;
 
 class NoCheatPlayer extends Player{
+		
+  public $cheats = [];
 	
-	
-  
   public function __construct(SourceInterface $interface, $clientID, $ip, $port){
         
 			$cheats = NoCheatPE::getInstance()->getCheats();
