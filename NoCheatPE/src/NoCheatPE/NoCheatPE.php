@@ -10,7 +10,13 @@ class NoCheatPE extends PluginBase{
   /** @var NoCheatPE $instance */
   public static $instance;
   
-  public $movement_cheats = [];
+  /** @var CheatDetection[] $cheats */
+  public $cheats = [];
+  
+  /** @var int $cheatsCount */
+  public $cheatsCount = 0`
+  
+  
   
   /** @var EventListener $eventListener */
   public $eventListener;
@@ -21,6 +27,15 @@ class NoCheatPE extends PluginBase{
     $this->getServer()->getPluginManager()->registerEvents($this->eventListener = new EventListener($this), $this);
     
     PluginBase::onEnable();
+  }
+  
+  public function registerCheat($class){
+     if(is_a($class, CheatDetection::class, true) !== false){
+     $this->cheatsCount++;
+     $cheat = "cheat" . $this->cheatsCount;
+     $this->cheatsCount[$cheat] = $class;
+     $this->getLogger()->info("Registred cheat" . $cheat);
+     }
   }
   
   public static function getInstance(){
