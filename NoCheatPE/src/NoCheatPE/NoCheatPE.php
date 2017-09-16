@@ -3,6 +3,8 @@
 namespace NoCheatPlus;
 
 use pocketmine\plugin\PluginBase;
+use NoCheatPE\listeners\EventListener;
+
 class NoCheatPE extends PluginBase{
   
   /** @var NoCheatPE $instance */
