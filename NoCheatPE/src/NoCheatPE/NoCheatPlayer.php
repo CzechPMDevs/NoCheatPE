@@ -11,7 +11,7 @@ class NoCheatPlayer extends Player{
 			$cheats = NoCheatPE::getInstance()->getCheats();
 		
 			foreach($cheats as $cheatClass) {
-				/** @var DetectionHook $cheat */
+				/** @var CheatDetection $cheat */
 				$cheat = new $cheatClass($this);
 				$this->cheats[] = $cheat;
 			}
