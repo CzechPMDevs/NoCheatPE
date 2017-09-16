@@ -4,4 +4,4 @@ api: 3.0.0-ALPHA7
 author: CzechPMDevs
 authors: [kaliiks]
 description: New version of NoCheatPE Plugin!
-
+main: NoCheatPE\NoCheatPE
