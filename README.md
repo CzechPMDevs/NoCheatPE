@@ -1,5 +1,5 @@
 # NoCheatPE
-New version of TruDan's NoCheatPE plugin with more features and ompimalization!
+New version of TruDan's NoCheatPE plugin with more features and optimalization!
 
 # Info
 This plugin is planned to be supporting ONLY PocketMine-MP.
