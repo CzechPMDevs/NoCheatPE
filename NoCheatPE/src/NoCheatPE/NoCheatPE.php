@@ -16,7 +16,7 @@ class NoCheatPE extends PluginBase{
   public $cheats = [];
   
   /** @var int $cheatsCount */
-  public $cheatsCount = 0`
+  public $cheatsCount = 0;
   
   
   
